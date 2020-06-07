@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_weight="2"
+        android:layout_margin="20dp"
+        android:src="@drawable/burger"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <RatingBar
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:numStars="5"
+        android:rating="5"
+        android:id="@+id/ratingbar"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:background="@drawable/buttonbackground"
+        android:layout_weight="0.5"
+        android:id="@+id/message"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:hint="Give Feedback"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/submit"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:text="SUBMIT"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp" />
+
+</LinearLayout>
